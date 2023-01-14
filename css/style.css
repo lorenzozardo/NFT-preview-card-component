@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card{
+    max-width: 360px;
+    border-radius: 0.5rem;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+}
+
+.card #equilibrium-image{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+section{
+    margin-top: 1rem;
+}
+
+section h2{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+section p{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+.informations{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.informations #ethereum-image{
+    width: 15px;
+}
+
+.informations #clock-image{
+    width: 20px;
+    margin-left: 6.5rem;
+}
+
+.informations .price{
+    color: hsl(178, 100%, 50%);
+}
+
+.informations .days-left{
+    color: hsl(215, 51%, 70%);
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+
+.creator #avatar-image{
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.creator strong{
+    color: #fff;
+}
+
+hr{
+    border-color: hsl(215, 32%, 27%);
+    margin-bottom: 1rem;
+}
+
+#equilibrium-image,
+h2,
+.creator strong{
+    cursor: pointer;
+}
+
+h2:hover,
+.creator strong:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.image{
+    position: relative;
+}
+
+.image div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.image div:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
